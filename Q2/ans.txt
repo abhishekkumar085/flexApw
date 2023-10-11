@@ -1,0 +1,48 @@
+1. justify-content (Justify Content Property):
+
+justify-content controls how flex items are distributed along the main axis within the flex container.
+It determines the horizontal alignment of items.
+Common values include:
+flex-start: Items are aligned to the start of the container.
+flex-end: Items are aligned to the end of the container.
+center: Items are centered within the container.
+space-between: Items are evenly spaced with the first item at the start and the last item at the end, creating space between items.
+space-around: Items are evenly spaced with equal space around them.
+space-evenly: Items are evenly spaced with equal space around and between them.
+
+
+2. align-items (Align Items Property):
+
+align-items determines how flex items are aligned along the cross-axis (perpendicular to the main axis) within the flex container.
+It controls vertical alignment.
+Common values include:
+flex-start: Items are aligned to the start of the cross-axis.
+flex-end: Items are aligned to the end of the cross-axis.
+center: Items are vertically centered within the container.
+baseline: Items are aligned based on their text baseline.
+stretch: Items are stretched to fill the container vertically.
+
+3. gap (Gap Property):
+
+The gap property (or row-gap and column-gap for older implementations) sets the spacing between flex items in a grid layout.
+It specifies the space between rows and columns of flex items.
+You can use it to add horizontal and vertical spacing between items without using margins or padding.
+
+4. flex-direction (Flex Direction Property):
+
+flex-direction determines the direction of the main axis within the flex container.
+It controls whether items are arranged horizontally or vertically within the container.
+Common values include:
+row: Items are arranged in a horizontal row (default).
+row-reverse: Items are arranged in a horizontal row, but in reverse order.
+column: Items are arranged in a vertical column.
+column-reverse: Items are arranged in a vertical column, but in reverse order.
+
+5. flex-wrap (Flex Wrap Property):
+
+flex-wrap controls whether flex items should wrap to the next line if they don't fit within the container's main axis.
+It affects how items flow when there isn't enough space along the main axis.
+Common values include:
+nowrap (default): Items remain on a single line.
+wrap: Items wrap to the next line if necessary.
+wrap-reverse: Items wrap to the next line, but in reverse order.

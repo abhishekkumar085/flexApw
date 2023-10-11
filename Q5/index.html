@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRCTC Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@100;200;300;400;500;600;700;800&family=Lato:wght@300;400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@700&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400&family=Poppins:wght@200;300;400;500;600&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fff;
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        /* background-color: red; */
+        /* height: 500px; */
+        /* width: 600px; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+
+        /* align-items: center; */
+        /* justify-content: flex-start; */
+      }
+
+      .nav ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: 36px;
+        margin-bottom: 10px;
+      }
+      .nav ul li {
+        margin-right: 15px;
+        color: #333333;
+      }
+      .btn button {
+        margin-right: 10px;
+        padding: 3px 8px;
+        border: 1px solid #dbd7d7;
+        border-radius: 3px;
+        background-color: #ffffff;
+      }
+      .btn #login {
+        background-color: #fb792b;
+        color: #ffffff;
+      }
+      .logo img {
+        width: 50px;
+      }
+      .imge img {
+        width: 500px;
+        margin-right: 300px;
+      }
+      .heading {
+        margin-top: 60px;
+        margin-left: -200px;
+        /* display: flex; */
+        /* flex-direction: column; */
+      }
+      .heading h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        color: #333333;
+        font-size: 32px;
+      }
+      .heading ul {
+        list-style-type: none;
+        margin-left: -4px;
+        margin-top: 15px;
+      }
+      .heading ul li {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 22px;
+      }
+      .heading ul #safe {
+        color: #01bb0a;
+      }
+      .heading ul #sec {
+        color: #fb792b;
+      }
+      .heading ul #punc {
+        color: #213d77;
+      }
+      .bookticket__button {
+        margin-top: 50px;
+        margin-left: -200px;
+      }
+      .bookticket__button button {
+        padding: 2px 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1.01px solid #7e7878;
+        border-radius: 3.7px;
+        background-color: #fff;
+      }
+      .bookticket__button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+      .bookticket__button span {
+        display: flex;
+        align-items: center;
+      }
+      .bookticket__button #bt1 {
+        background-color: #213d77;
+        color: white;
+      }
+      .bang {
+        display: flex;
+        margin-left: -200px;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        border: 1.01px solid rgba(51, 51, 51, 0.1);
+        align-items: center;
+        padding: 15px 15px;
+      }
+
+      .dates {
+        display: flex;
+        margin-left: -200px;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        border: 1.01px solid rgba(51, 51, 51, 0.1);
+        
+      }
+      .bang-from {
+        display: flex;
+        /* margin: 10px; */
+        align-items: center;
+        justify-content: center;
+
+      }
+      .bang-from img {
+        height: 32.44px;
+        width: 32.44px;
+        margin-right: 15px;
+        /* margin-top: 10px; */
+      }
+      .card-contentbng img {
+        height: 20.44px;
+        width: 20.44px;
+        margin-bottom: -6px;
+      }
+      .card-contentbng p {
+        font-size: 15.21px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .kasgr {
+        display: flex;
+        /* margin: 10px; */
+        align-items: center;
+      }
+      .kasgr img{
+        margin-right: 12px;
+        height: 32.44px;
+        width: 32.44px;
+      }
+      .kasgr-content img{
+        height: 20.44px;
+        width: 20.44px;
+        margin-bottom: -6px;
+      }
+      .kasgr-content p{
+        font-size: 15.21px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+      }
+/* button */
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./img/image 5.png" alt="" /><img
+          src="./img/image 6.png"
+          alt=""
+        />
+      </div>
+      <div class="nav">
+        <ul>
+          <li>Ask Disha</li>
+          <li>Contact us</li>
+          <li>Alerts</li>
+        </ul>
+        <div class="btn">
+          <button id="login">Login</button>
+          <button>Register</button>
+          <button>Agent Login</button>
+        </div>
+        <div class="heading">
+          <h1>Indian Railway</h1>
+          <ul>
+            <li id="safe">Safety</li>
+            <li id="sec">Security</li>
+            <li id="punc">Punctuality</li>
+          </ul>
+        </div>
+        <div class="bookticket__button">
+          <button id="bt1">
+            <span>
+              <img
+                src="./img/confirmation_number_FILL0_wght400_GRAD0_opsz48 1.png"
+                alt=""
+              />
+              Book Ticket
+            </span>
+          </button>
+          <button id="bt2">
+            <span>
+              <img
+                src="./img/done_FILL0_wght400_GRAD0_opsz48 (1) 1.png"
+                alt=""
+              />
+              PNR Status
+            </span>
+          </button>
+          <button id="bt3">
+            <span>
+              <img
+                src="./img/insert_chart_FILL0_wght400_GRAD0_opsz48 1.png"
+                alt=""
+              />
+              Charts/Vacancy
+            </span>
+          </button>
+        </div>
+        <!-- jbjkkjknjkbkbj -->
+        <div class="bang">
+          <div class="bang-from">
+            <img src="./img/ic-search-from-desktop.png" alt="" />
+            <div class="card-contentbng">
+              <p>
+                From
+                <img
+                  src="./img/expand_more_FILL0_wght400_GRAD0_opsz48 1.png"
+                  alt=""
+                />
+              </p>
+
+              <h2>Banglore</h2>
+              <p>KSR-Banglore</p>
+            </div>
+          </div>
+          <img
+            src="./img/sync_alt_FILL0_wght300_GRAD0_opsz48 1.png"
+            style="width: 48px; height: 48px; margin-top: 6px"
+            alt=""
+          />
+          <div class="kasgr">
+            <img src="./img/ic-search-to-desktop.png" alt="" />
+            <div class="kasgr-content">
+              <p>
+                To
+                <img
+                  src="./img/expand_more_FILL0_wght400_GRAD0_opsz48 1.png"
+                  alt=""
+                />
+              </p>
+              <h2>Kasaragod</h2>
+              <p>KSD - Kasaragod</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- date -->
+        <div class="dates">
+         <div class="dates_from">
+          <img src="./img/ic-search-calender-desktop.png" alt="">
+         </div>
+         <div class="dates_content">
+          <p>Date <img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt=""></p>
+          <h2>01 Aug 23</h2>
+          <p>Tuesday</p>
+         </div>
+          <div class="3a">
+            <div class="3aimg">
+              <img src="./img/group_work_FILL0_wght200_GRAD0_opsz48 1.png" alt="">
+              
+            </div>
+            <div class="3a-content">
+              <p>Class <img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt=""></p>
+              <h2>3A</h2>
+              <p>AC 3 Tier</p>
+            </div>
+          </div>
+          <div class="seat">
+<img src="./img/widgets_FILL0_wght200_GRAD0_opsz48 1.png" alt="">
+          </div>
+          <div class="seat_content">
+            <p>Seat Type <img src="./img/expand_more_FILL0_wght400_GRAD0_opsz48 1.png" alt=""></p>
+            <h2>TATKAL</h2>
+            <p>AC 3 Tier</p>
+           </div>
+        </div>
+        <!-- button -->
+        <div class="btnn">
+          <button>
+            Search Train
+            <img
+              src="./img/arrow_forward_FILL0_wght400_GRAD0_opsz48 1.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+      <div class="imge">
+        <img src="./img/Rectangle 11.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
