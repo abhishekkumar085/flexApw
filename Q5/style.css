@@ -1,7 +1,228 @@
-body{
-  height: 100vh;
-  width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-display: flex;
+body {
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  /* width: 100%;
+        height: 100%; */
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 100vh;
+}
+.imge {
+  width: 40%;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 36px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.nav ul li {
+  margin-right: 15px;
+  color: #333333;
+}
+.btn button {
+  margin-right: 10px;
+  padding: 3px 8px;
+  border: 1px solid #dbd7d7;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.btn #login {
+  background-color: #fb792b;
+  color: #ffffff;
+}
+.logo img {
+  width: 50px;
+  margin-top: 20px;
+}
+.imge img {
+  /* width: 500px; */
+  /* margin-right: 300px; */
+  height: 95vh;
+}
+.heading {
+  margin-top: 60px;
+  margin-left: -200px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.heading h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  font-size: 32px;
+}
+.heading ul {
+  list-style-type: none;
+  margin-left: -4px;
+  margin-top: 15px;
+}
+.heading ul li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+}
+.heading ul #safe {
+  color: #01bb0a;
+}
+.heading ul #sec {
+  color: #fb792b;
+}
+.heading ul #punc {
+  color: #213d77;
+}
+.bookticket__button {
+  margin-top: 50px;
+  margin-left: -200px;
+}
+.bookticket__button button {
+  padding: 2px 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1.01px solid #7e7878;
+  border-radius: 3.7px;
+  background-color: #fff;
+}
+.bookticket__button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.bookticket__button span {
+  display: flex;
+  align-items: center;
+}
+.bookticket__button #bt1 {
+  background-color: #213d77;
+  color: white;
+}
+.bang {
+  display: flex;
+  margin-left: -200px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  border: 1.01px solid rgba(51, 51, 51, 0.1);
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.dates {
+  display: flex;
+  margin-left: -200px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  border: 1.01px solid rgba(51, 51, 51, 0.1);
+  border-radius: 10px;
+}
+.dates .dates_from {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+.dates .dates_from img {
+  margin-right: 10px;
+}
+.dates .dates_content img {
+  margin-bottom: -6px;
+}
+/* .a3-content{
+        display: flex;
+        flex-direction: column;
+      } */
+.dates .a3-content p {
+  margin-top: 10px;
+}
+.dates .a3-content img {
+  margin-bottom: -6px;
+}
+.a3 {
+  display: flex;
+  padding: 10px;
+  margin-right: 10px;
+}
+.a3 .a3img {
+  display: flex;
+  align-items: flex-start;
+  margin-top: -8px;
+  margin-right: 8px;
+}
+.dates .seat img {
+  margin-right: 10px;
+}
+.dates .seat_content img {
+  margin-bottom: -6px;
+}
+.bang-from {
+  display: flex;
+  /* margin: 10px; */
+  align-items: center;
+  justify-content: center;
+}
+.bang-from img {
+  height: 32.44px;
+  width: 32.44px;
+  margin-right: 15px;
+  /* margin-top: 10px; */
+}
+.card-contentbng img {
+  height: 20.44px;
+  width: 20.44px;
+  margin-bottom: -6px;
+}
+.card-contentbng p {
+  font-size: 15.21px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.kasgr {
+  display: flex;
+  /* margin: 10px; */
+  align-items: center;
+}
+.kasgr img {
+  margin-right: 12px;
+  height: 32.44px;
+  width: 32.44px;
+}
+.kasgr-content img {
+  height: 20.44px;
+  width: 20.44px;
+  margin-bottom: -6px;
+}
+.kasgr-content p {
+  font-size: 15.21px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* button */
+.btnn {
+  margin-top: 20px;
+  /* margin-right: 50px; */
+  margin-left: -200px;
+}
+.btnn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 81px;
+  width: 505px;
+  border: none;
+  border-radius: 10.4px;
+  background-color: rgba(1, 187, 10, 1);
+  color: white;
 }
